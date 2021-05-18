@@ -4,22 +4,23 @@ using namespace std;
 
 class Account {
 
-
 public:
     // Constructor
     Account();
     Account();          // copy constructor
     ~Account();
 
-    void buildBalance();            // build an array using Client information
-    bool isAccEmpty() const;                 // is tree empty?
-    void makeAccEmpty();                     // make tree empty
-
-
+    void setBalance();                       // set the Balance (useful for initial setup)
+    bool isAccEmpty() const;                 // is balance 0?
+    int getBalance() const;                  // return the balance
+    
+    bool deposit();                          // add money, for transactions
+    bool withdraw();                         // remove money, for transactions
+    
 
 private:
-    Account accBalance[10];        // array contains 10 accounts information
-
+    int balance;
+    void makeAccEmpty();                     // for emptying the tree
 };
 
 #endif
