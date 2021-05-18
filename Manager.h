@@ -2,22 +2,25 @@
 #define _MANAGER_H_
 #include "Client.h"
 #include "Transaction.h"
+#include <queue>
 using namespace std;
 
 class Manager {
 
 public:
-    // Constructor
+    // Structors
     Manager();
-    Manager();            // copy consturctor
     ~Manager();
 
-    void displayAll();   // display all clients' information
-    void displayCli();   // display certain client's information
+    void displayClients();   // display all clients' information
+    void displayClient();   // display certain client's information
     void displayAcc();   // display certain account's information
-    void transCommand();    // deal with transaction command
+    void addTxn();    // deal with transaction command
 
-
+private:
+    BSTNode* BSTRoot;
+    queue<Transaction> txnnQueue; 
+    
 };
 
 #endif
