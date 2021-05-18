@@ -25,7 +25,9 @@ public:
 
 
 private:
-    string lastName, firstName, accountName;
+    string lastName, firstName;
+    int clientID;
+    Account accounts[10];
 };
 
 #endif
