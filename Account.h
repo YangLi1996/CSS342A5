@@ -17,7 +17,6 @@ public:
     bool deposit();                          // add money, for transactions
     bool withdraw();                         // remove money, for transactions
     
-
 private:
     int balance;
     void makeAccEmpty();                     // for emptying the tree
