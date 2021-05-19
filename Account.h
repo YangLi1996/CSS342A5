@@ -1,3 +1,6 @@
+//-----------------Account.h-----------------------------
+// Manage clients'account information
+
 #ifndef _ACCOUNT_H_
 #define _ACCOUNT_H_
 using namespace std;
@@ -13,9 +16,7 @@ public:
     void setBalance();                       // set the Balance (useful for initial setup)
     bool isAccEmpty() const;                 // is balance 0?
     int getBalance() const;                  // return the balance
-    
-    bool deposit();                          // add money, for transactions
-    bool withdraw();                         // remove money, for transactions
+   
     
 private:
     int balance;
