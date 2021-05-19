@@ -16,7 +16,10 @@ public:
     Transaction();            // copy consturctor
     ~Transaction();
 
-    bool execute();
+    bool deposit();                          // add money, for transactions
+    bool withdraw();                         // remove money, for transactions
+    bool move();                            // move money from one account to another
+    bool display();                        // display account
     
 private:
     char txnType;
