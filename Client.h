@@ -21,7 +21,7 @@ public:
     void makeTEmpty();                     // make tree empty
     void getLast();
     void getFirst();
-    void getAccount();                   // get name or account from certain client
+    void getID();                   // get name or ID from certain client
 
 
 private:
