@@ -11,14 +11,13 @@ public:
     // Structors
     Manager();
     ~Manager();
-
-    void displayClients();   // display all clients' information
-    void displayClient();   // display certain client's information
-    void displayAcc();   // display certain account's information
+    
+    void buildQueue();  // build command queue
+    void buildTree();  // build BSTree
     void addTxn();    // deal with transaction command
 
 private:
-    BSTNode* BSTRoot;
+    BSTree infoTree;
     queue<Transaction> txnnQueue; 
     
 };
