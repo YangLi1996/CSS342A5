@@ -1,0 +1,25 @@
+#include "Manager.h"
+#include <iostream>
+using namespace std;
+
+int main() {
+    ifstream infile1("lab5data.txt");
+    ifstream infile2("lab5command.txt");
+    if (!infile1) {
+        cout << "File could not be opened." << endl;
+        return 1;
+    }
+    if (!infile2) {
+        cout << "File could not be opened." << endl;
+        return 1;
+    }
+
+    Account balance;
+    balance.setBalance(infile1);
+    Transaction txnnQueue;
+    txnnQueue.setQueue(infile2);
+
+    addTxn();
+    
+    return 0;
+}
